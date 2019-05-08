@@ -295,17 +295,6 @@ namespace Oware
             var y = UTMNorthing;
             var ZoneNumber = UTMZoneNumber;
             var ZoneLetter = UTMZoneLetter;
-            int NorthernHemisphere;
-
-            if ("N" == ZoneLetter)
-            {
-                NorthernHemisphere = 1;
-            }
-            else
-            {
-                NorthernHemisphere = 0;
-                y -= 10000000.0;
-            }
 
             var LongOrigin = (ZoneNumber - 1) * 6 - 180 + 3;
 
